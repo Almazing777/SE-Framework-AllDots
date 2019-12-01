@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d4be7a7-4a2d-4b0e-aa59-8e776e85d466" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Academy/Listeners.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LandingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/resources/data.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Academy/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Academy/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Academy/ValidateNavBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Academy/ValidateNavBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Academy/ValidateTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Academy/ValidateTitle.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ValidateTitle">
+  <component name="RunManager" selected="TestNG.HomePage">
     <configuration name="HomePage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SE-AllDotsConnected" />
       <extension name="coverage">
@@ -98,7 +90,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidateNavBar" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomePage.basePageNavigation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SE-AllDotsConnected" />
       <extension name="coverage">
         <pattern>
@@ -107,8 +99,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Academy" />
-      <option name="MAIN_CLASS_NAME" value="Academy.ValidateNavBar" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="Academy.HomePage" />
+      <option name="METHOD_NAME" value="basePageNavigation" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -154,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.HomePage" />
+        <item itemvalue="TestNG.HomePage.basePageNavigation" />
         <item itemvalue="TestNG.ValidateTitle" />
         <item itemvalue="TestNG./Users/Almas/Documents/SE-AllDotsConnected/TestNG.xml" />
         <item itemvalue="TestNG./Users/Almas/Documents/SE-AllDotsConnected/testng.xml" />
-        <item itemvalue="TestNG.ValidateNavBar" />
-        <item itemvalue="TestNG.HomePage" />
       </list>
     </recent_temporary>
   </component>

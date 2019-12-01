@@ -1,12 +1,16 @@
 package resources;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.io.FileHandler;
 
 public class Base {
 
@@ -38,4 +42,17 @@ public class Base {
 
     }
 
+    public void getScreenshot(String name) throws IOException {
+        String screenName= System.currentTimeMillis()+ ".png";
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+
+            FileHandler.copy(src, new File(System.getProperty("user.dir") + "/target/Screenshots/" + screenName + ""));
+
+        } catch (IOException e) {
+
+            System.out.println(e.getMessage());
+
+        }
+    }
 }
