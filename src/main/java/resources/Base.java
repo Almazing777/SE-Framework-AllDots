@@ -1,3 +1,5 @@
+package Academy.resources;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -12,21 +14,21 @@ public class Base {
 
     public WebDriver initializeDriver() throws IOException {
         Properties prop = new Properties();
-        FileInputStream fis = new FileInputStream("//Users//Almas//Documents//SE-AllDotsConnected//src//test//java");
+        FileInputStream fis = new
+                FileInputStream("//Users//Almas//Documents//SE-AllDotsConnected//src//main//java//resources//data.properties");
 
         prop.load(fis);
         String browserName = prop.getProperty("browser");
 
-        if(browserName == "chrome"){
-            System.setProperty("webdriver.chrome.driver", "//Users//Almas//Documents//BrowserDriver/chromedriver.exe");
+        if(prop.getProperty("browser").equals("chrome")){
             driver = new ChromeDriver();
         }
 
-        else if (browserName == "firefox"){
-            System.setProperty("webdriver.firefox.driver", "//Users//Almas//Documents//BrowserDriver/geckodriver.exe");
+        else if(prop.getProperty("Browser").equals("firefox")) {
             driver = new FirefoxDriver();
         }
 
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver;
 
