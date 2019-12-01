@@ -8,15 +8,23 @@ public class LoginPage {
 
     public WebDriver driver;
 
-    By signin = By.cssSelector("a[href*='sign_in']");
+    By email = By.cssSelector("[id='user_email']");
+    By password = By.cssSelector("[id='user_password']");
+    By login = By.cssSelector("[value='Log In']");
 
     //constructor
     public LoginPage(WebDriver driver){
         this.driver = driver;
     }
 
-    public WebElement getLogin(){
-        return driver.findElement(signin);
+    public WebElement getEmail(){
+        return driver.findElement(email);
     }
+
+    public WebElement getPassword(){
+        return driver.findElement(password);
+    }
+
+    public WebElement getLogin(){ return driver.findElement(login); }
 
 }

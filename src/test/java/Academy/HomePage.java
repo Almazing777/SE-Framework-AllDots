@@ -10,6 +10,8 @@ import java.io.IOException;
 
 public class HomePage extends Base {
 
+
+
     @Test (dataProvider = "getData")
     public void basePageNavigation
             (String Username, String Password, String text)
